@@ -6,27 +6,36 @@
 //     –	Turn left.
 //     [	Save current state.
 //     ]	Restore current state.
+
+/* Figure 1: edge-rewriting */
 let axiom = "F";
 let rules = {
   "F" : "FF+[+F-F-F]-[-F+F+F]",
 };
 
-let generations = 4;
+/* Other figure (node-rewriting) */
+// let axiom = "X";
+// let rules = {
+//   "X" : "F-[[X]+X]+F[+FX]-X",
+//   "F" : "FF",
+// }
 
-let length = 5;
-let angle;
+
+let generations = 4;
+let angle = 22.5; //degrees
+
+let length = 5; //length of branchs
 
 function setup() {
+  angleMode(DEGREES);
   createCanvas(400, 400);
   background(230);
   noLoop();
-
-  angle = radians(25);
 }
 
 function draw() {
   textSize(12);
-  text("L-System my implementation by CR", 10, 20)
+  text("L-System my implementation by CR05", 10, 20)
   
   // Generando la cadena resultante de L-System
   sentence = axiom; // Generation 0  
