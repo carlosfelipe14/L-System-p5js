@@ -26,7 +26,7 @@ Axiom       A
 Rules       A → AB
             B → A
 
-Generación	Statement
+Generation	Sentence
 G-0     	A
 G-1     	AB
 G-2     	ABA
@@ -40,12 +40,13 @@ How Lindenmayer was able to translate strings of characters into the organic str
 
 Consideremos el alfabeto: `F, G, +, –, [ and ]`
 donde, 
- `F`	Draw a line and move forward.
- `G`	Move forward (without drawing a line).
- `+`	Turn right.
- `–`	Turn left.
- `[`	Save current state.
- `]`	Restore current state.
+
+-  `F`	Draw a line and move forward.
+-  `G`	Move forward (without drawing a line).
+-  `+`	Turn right.
+-  `–`	Turn left.
+-  `[`	Save current state.
+-  `]`	Restore current state.
 
 > **Nota**: El ángulo de giro es arbitrario. 
 
@@ -70,6 +71,11 @@ Mas figuras:
 ![more example](more_examples1.jpg)
 
 ![more example](more_examples2.jpg)
+
+> Reemplazar los datos en el código fuente para reproducir las figuras:
+>
+> - $n$ indica el número de generaciones a iterar.
+> - $\delta$  indica el angulo en grados.
 
 ## References
 
